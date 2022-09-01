@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOKING Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+  $(document).ready(function () {
+            $(".click").click(function () {
+                var x = $(".unmae").val();
+                if (x == "") {
+                  alert("please enter Details");
+                   
+                }
+                else{
+                   alert("Ticket Book SuccessFully.....");
+                }
+              });
+            });
+    </script>
+</head>
+<style>
+body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  }
+</style>
+<body>
+    <nav class="navbar bg-light fixed">
+        
+        <div class="container-fluid">
+            <img src="2.jpg" height="70px">
+          <a  style="font-size: 30px; color: aqua;" class="navbar-brand" href="#"><i>Welcome &nbsp;<span style="color:blueviolet " id="resultm"></span></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a style="color: blueviolet; font-size: 40px;"class="nav-link active" aria-current="page" href="#">Welcome User</a>
+                  <img src="26.jpg">
+                  <h4>
+                    <i>Name</i>=<span id="resultn"></span>
+                </h4>
+                <h4>
+                <i> Email</i>=<span id="resulte"></span>
+                </h4>
+                <h4>
+                    <i> Mobile no.</i>=<span id="resultt"></span>
+                    </h4>
+                </li>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <h1 style="color: rgb(11, 84, 241); font-size: 4vw;">
+        <center><i>BOOK NOW</i></center></h1>
+        <div class="container">
+            <div class="row g-3">
+           
+              <h2 class="mb-sm">Our <strong>Honeymoon Package</strong></h2>
+              <div class="col-md-6">
+                <img src="14.jpg" height="350px" width="350px">
+              </div>
+          
+              <div class="col-md-6">
+             
+                <label for="validationCustom01" class="form-label">Husband Name</label>
+                <input type="text" class="form-control" class="unmae"  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              
+             
+                <label for="validationCustom02" class="form-label">Wife Name</label>
+                <input type="text" class="form-control" class="unmae" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                
+                
+                <label for="validationCustom02" class="form-label">DATE</label>
+                <input type="date" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+                <label for="validationCustom03" class="form-label">MOBILE</label>
+                  <input type="text" class="form-control" id="validationCustom03" maxlength="10" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid mobile no..
+                  </div>
+                  <label for="validationCustom04" class="form-label">CHOOSE LOCATION</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>MUMBAI</option>
+                  <option>NEPAL </option>
+                  <option>SRILANKA</option>
+                  <option>PARIS</option>
+                  <option>GOA</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid FLIGHT.
+                </div>
+                <label for="validationCustom04" class="form-label">CHOOSE HOTEL</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>SEVA HOTEL</option>
+                  <option>HOTEL MUMBAI </option>
+                  <option>TAJ HOTEL</option>
+                  <option>KRIPAAL HOTEL</option>
+                  <option>AKASHAA HOTEL</option>
+                </select>
+               
+            
+                <label for="validationCustom04" class="form-label">CHOOSE SEAT TYPE</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>DOUBLE </option>
+                  
+                  <option>DOUBLE WITH FOOD SERVICES</option>
+                </select>
+               
+              
+              
+                <label for="validationCustom05" class="form-label">COUPON</label>
+                <select class="form-select" id="validationCustom04" >
+                    <option selected disabled value="">Choose...</option>
+                    <option>10% Off TAJ HOTEL</option>
+                    <option>15% Off H HOTEL </option>
+                    <option>15% Off DOUBLE BED </option>
+                    <option>20% OFF C HOTEL</option>
+                    <option>20% OFF PARIS</option>
+                   
+                  </select>
+                  
+              </div>
+           
+            
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              
+             
+                <button style="background-color:rgb(81, 218, 81)" class="click"   type="submit">BOOK NOW</button>
+              
+            </form>
+            </div>
+        </div>
+          </div>
+          
+           <br> 
+            <div class="container">
+                <div class="row g-3">
+                  <h2 class="mb-sm">Our <strong>Wildlife and Adventures  Package</strong></h2>
+                
+                  <div class="col-md-6">
+                    <img src="15.jpg" height="350px" width="350px">
+                  </div>
+              
+                  <div class="col-md-6">
+                 
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" class="unmae"  required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  
+                 
+                 
+                  
+                    
+                 
+                    <label for="validationCustom02" class="form-label">DATE</label>
+                    <input type="date" class="form-control" id="validationCustom02"  required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                      <label for="validationCustom03" class="form-label">MOBILE</label>
+                      <input type="text" class="form-control" id="validationCustom03" maxlength="10" required>
+                      <div class="invalid-feedback">
+                        Please provide a valid mobile no..
+                      </div>
+                    
+                 
+                    <label for="validationCustom04" class="form-label">CHOOSE LOCATION</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>KAZIRANGA PARK</option>
+                      <option>HILL AREA </option>
+                      <option>MOUNTAIN</option>
+                      <option>ZOO</option>
+                    
+                    </select>
+                    <label for="validationCustom04" class="form-label">HOW MANY PEOPLE</label>
+                    <select class="form-select" id="validationCustom04" required>
+                      <option selected disabled value="">Choose...</option>
+                      <option>0-1</option>
+                      <option>1-2</option>
+                      <option>2-3</option>
+                      <option>3-4</option>
+                      <option>4-5</option>
+                    
+                    </select>
+                  
+                  
+                    <label for="validationCustom05" class="form-label">COUPON</label>
+                    <select class="form-select" id="validationCustom04" >
+                        <option selected disabled value="">Choose...</option>
+                        <option>10% Off PARK</option>
+                        <option>15% OfF HILL AREA </option>
+                        <option>20% OUT MOUNTAIN</option>
+                       
+                      </select>
+                      
+                  </div>
+               
+                
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  
+                 
+                    <button style="background-color:rgb(81, 218, 81)" class="click"  class="btn btn-primary" type="submit">BOOK NOW</button>
+                  
+                </form>
+                </div>
+            </div>
+              </div>
+              <br>
+              
+              <div class="container">
+                <div class="row g-3">
+                  <h2 class="mb-sm">Our <strong>Single Tour Package</strong></h2>
+              <div class="col-md-6">
+                <img src="16.jpg" height="350px" width="350px">
+              </div>
+          
+              <div class="col-md-6">
+             
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" class="unmae" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              
+             
+               
+             
+              
+                
+             
+                <label for="validationCustom02" class="form-label">DATE</label>
+                <input type="date" class="form-control" id="validationCustom02" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              
+                  <label for="validationCustom03" class="form-label">MOBILE</label>
+                  <input type="text" class="form-control" id="validationCustom03" maxlength="10" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid mobile no..
+                  </div>
+                
+                  <label for="validationCustom04" class="form-label">CHOOSE LOCATION</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>UTTARAKHADA</option>
+                    <option>HIMANCHGAL </option>
+                    <option>HILL AREA</option>
+                    <option>HIMALAYA</option>
+                  </select>
+                <label for="validationCustom04" class="form-label">CHOOSE BEACH</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>GOA</option>
+                  <option>MUMBAI </option>
+                  <option>CHENNAI</option>
+                  <option>BHUTON</option>
+                  <option>NEPAL</option>
+                </select>
+                <div class="invalid-feedback">
+                  Please select a valid FLIGHT.
+                </div>
+                <label for="validationCustom04" class="form-label">CHOOSE HOTEL</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>SEVA HOTEL</option>
+                  <option>HOTEL MUMBAI </option>
+                  <option>TAJ HOTEL</option>
+                  <option>KRIPAAL HOTEL</option>
+                  <option>AKASHAA HOTEL</option>
+                </select>
+                <label for="validationCustom04" class="form-label">CHOOSE BED TYPE</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Choose...</option>
+                  <option>SINGLE</option>
+                  <option>DOUBLE </option>
+                  <option>TRIPLE</option>
+                </select>
+                <label for="validationCustom05" class="form-label">COUPON</label>
+                <select class="form-select" id="validationCustom04" >
+                    <option selected disabled value="">Choose...</option>
+                    <option>10% Off GOA</option>
+                    <option>15% Off MUMBAI </option>
+                    <option>15% Off TAJ HOTEL </option>
+                    <option>15% Off UTTARAKHADA TRIP </option>
+                  
+                   
+                  </select>
+                  
+              </div>
+           
+            
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox"  id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Agree to terms and conditions
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              
+             
+                <button style="background-color:rgb(81, 218, 81)" class="click" class="btn btn-primary" type="submit">BOOK NOW</button>
+              
+            </form>
+            </div>
+        </div>
+          </div>
+          <br>
+          <div class="container">
+            <div class="row g-3">
+              <h2 class="mb-sm">Our <strong>Family Tour Package</strong></h2>
+          <div class="col-md-6">
+            <img src="17.jpg" height="350px" width="350px">
+          </div>
+      
+          <div class="col-md-6">
+         
+            <label for="validationCustom01" class="form-label">First name</label>
+            <input type="text" class="form-control" class="unmae" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+    
+         
+            <label for="validationCustom02" class="form-label">DATE</label>
+            <input type="date" class="form-control" id="validationCustom02"  required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          
+              <label for="validationCustom03" class="form-label">MOBILE</label>
+              <input type="text" class="form-control" id="validationCustom03" maxlength="10" required>
+              <div class="invalid-feedback">
+                Please provide a valid mobile no..
+              </div>
+              <label for="validationCustom04" class="form-label">CHOOSE PERSON</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>1</option>
+                <option>1-2</option>
+                <option>2-3</option>
+                <option>3-4</option>
+                <option>5-9</option>
+              </select>
+              <label for="validationCustom04" class="form-label">CHOOSE LOCATION</label>
+              <select class="form-select" id="validationCustom04" required>
+                <option selected disabled value="">Choose...</option>
+                <option>UTTARAKHADA</option>
+                <option>HIMANCHGAL </option>
+                <option>HILL AREA</option>
+                <option>HIMALAYA</option>
+                
+              </select>
+            <label for="validationCustom04" class="form-label">CHOOSE BEACH</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>GOA</option>
+              <option>MUMBAI </option>
+              <option>CHENNAI</option>
+              <option>BHUTON</option>
+              <option>NEPAL</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid FLIGHT.
+            </div>
+            <label for="validationCustom04" class="form-label">CHOOSE HOTEL</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>SEVA HOTEL</option>
+              <option>HOTEL MUMBAI </option>
+              <option>TAJ HOTEL</option>
+              <option>KRIPAAL HOTEL</option>
+              <option>AKASHAA HOTEL</option>
+            </select>
+            <label for="validationCustom04" class="form-label">CHOOSE BED TYPE</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Choose...</option>
+              <option>SINGLE</option>
+              <option>DOUBLE </option>
+              <option>TRIPLE</option>
+            </select>
+            <label for="validationCustom05" class="form-label">COUPON</label>
+            <select class="form-select" id="validationCustom04" >
+                <option selected disabled value="">Choose...</option>
+                <option>10% Off GOA</option>
+                <option>15% Off MUMBAI </option>
+                <option>15% Off TAJ HOTEL </option>
+                <option>15% Off UTTARAKHADA TRIP </option>
+              
+               
+              </select>
+              
+          </div>
+       
+        
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Agree to terms and conditions
+              </label>
+              <div class="invalid-feedback">
+                You must agree before submitting.
+              </div>
+            </div>
+          
+         
+            <button style="background-color:rgb(81, 218, 81)" class="click" class="btn btn-primary" type="submit">BOOK NOW</button>
+          
+        </form>
+        </div>
+    </div>
+      </div>
+         <br>
+         <br>
+         <br>
+      <div class="copyright-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                    <div class="copyright-text">
+                        <p>Copyright &copy; 2022, All Right Reserved <a href="index.html">Trip Engineers</a></p>
+                    </div>
+                </div>
+    
+    <script>
+     
+          
+        document.getElementById("resultn").innerHTML =localStorage.getItem("name");
+        document.getElementById("resultm").innerHTML =localStorage.getItem("fname");
+        document.getElementById("resulte").innerHTML = localStorage.getItem("email"); 
+        document.getElementById("resultt").innerHTML = localStorage.getItem("mobile"); 
+     
+      
+    </script>
+</body>
+</html>

@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>traveling websites</title>
+  <!-- CSS only -->
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="one.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<script>
+  document
+    .getElementById("scroller")
+    .addEventListener("scroll", function () {
+      var scrollerWrapper = document.getElementById("scroller");
+      scrollPercent =
+        (scrollerWrapper.scrollLeft /
+          (scrollerWrapper.scrollWidth - scrollerWrapper.clientWidth)) *
+        100;
+      document.getElementById("scroll-progress").style.width =
+        scrollPercent + "%";
+    });
+</script>
+<script>
+  $(document).ready(function () {
+    pagenum = 1;
+    function AutoRotate() {
+      var myele = null;
+      var allElements = document.getElementsByTagName('label');
+      for (var i = 0, n = allElements.length; i < n; i++) {
+        var myfor = allElements[i].getAttribute('for');
+        if ((myfor !== null) && (myfor == ('slide_2_' + pagenum))) {
+          allElements[i].click();
+          break;
+        }
+      }
+      if (pagenum == 4) {
+        pagenum = 1;
+      } else {
+        pagenum++;
+      }
+    }
+    setInterval(AutoRotate, 5000);
+  });
+</script>
+<style>
+  body {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  }
+</style>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-light">
+
+    <div class="container-fluid">
+
+      <img class="logo" class="space" src="2.jpg" height="100 px">
+
+
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+
+            <a class="btn btn-outline-primary" aria-current="page" class="space" class="home" href="#">Home</a>
+          </li>
+          &nbsp; &nbsp;
+          <li class="nav-item">
+
+            <a class="btn btn-outline-primary" aria-current="page" class="space" class="home" href="aboutus.html">About
+              Us</a>
+          </li>&nbsp; &nbsp;
+          <li class="nav-item">
+
+            <a class="btn btn-outline-primary" aria-current="page" class="space" class="home"
+              href="contact.html">Contact</a>
+          </li>&nbsp; &nbsp;
+          <section id="courses">
+            <li class="nav-item dropdown">
+
+              <a class="btn btn-outline-secondary" class="nav-link dropdown-toggle" href="#" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Holiday
+              </a>
+
+              <ul class="dropdown-menu">
+                <ol>
+                  <ol>
+                    <a href="login.html">Maldeves
+                  </ol>
+                  <ol href="login.html">Australia</ol>
+                  <ol href="login.html">Canada</ol>
+                  <ol href="login.html">Goa</ol>
+                  <ol href="login.html">Srilankha</ol>
+                  <ol href="login.html">Mumbai</ol>
+                  <ol href="login.html">Jammu</ol>
+                  <ol href="login.html">Nepal</ol>
+                  <ol href="login.html">Bhuton</ol>
+                  <ol href="login.html">England</ol>
+                  <ol href="login.html">Paris</a></ol>
+            </li>
+
+          </section>
+          &nbsp; &nbsp;
+          <li class="nav-item dropdown">
+
+            <a class="btn btn-outline-secondary" class="nav-link dropdown-toggle" href="#" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Offers
+            </a>
+
+            <ul class="dropdown-menu">
+              <ol>
+              <a style="color: rgb(20, 128, 216);" href="login.html">📢12% off(Hotel) Dubai hotel.</ol>
+                <ol href="login2.html">📢12% off(Hotel) Dubai hotel.</ol>
+                <ol href="login2.html">📢15% off(Hotel) Dubai hotel.</ol>
+                <ol href="login3.html">📢19% off(Goa) Honeymoon.</ol>
+                <ol href="login2.html">📢25% off(Hotel) Dubai hotel.</ol>
+                <ol href="login3.html">📢19% off(Goa) Adventure.</ol>
+                <ol href="login3.html">📢42% off (paris)Family Tour.</ol>
+                <ol href="login3.html">📢10% off (laddakh) single Tour</ol>
+              </a>
+            </ul>
+          </li>
+          &nbsp; &nbsp;
+
+        </ul>
+
+        <div class="nav-item">
+          <a class="btn btn-success" href="login.html">Login/Signup</a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </nav>
+  <h1 class="intro"><i>Welcome to Trip Engineers</i> </h1>
+
+  <div class="mySlides fade">
+
+    <img clas="cov" src="3.jpg" height="500px" style="width:100%">
+    <div style="font-size: 5vw; color: blueviolet;" class="text"><i></i></div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="13.jpg" height="500px" style="width:100%">
+    <div style="font-size: 5vw; color: rgb(255, 51, 0);" class="text"><i>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;WELCOME</i></div>
+  </div>
+
+  <div class="mySlides fade">
+
+    <img src="11.jpg" height="500px" style="width:100%">
+    <div style="font-size: 5vw; color: aqua;" class="text"><i>TRIP ENGINEERS</i></div>
+  </div>
+  <div class="mySlides fade">
+
+    <img src="12.jpg" height="500px" style="width:100%">
+    <div style="font-size: 5vw; color: rgb(241, 18, 193);" class="text">BOOK HOTEL || BEACH|| FLIGHT</div>
+  </div>
+  <div class="mySlides fade">
+
+    <img src="4.jpg" height="500px" style="width:100%">
+    <div style="font-size: 5vw; color: rgb(22, 26, 245);" class="text"> MORE PACKAGE  AVILABLE</div>
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+  </script>
+
+
+
+  <div class="container signup-container " style="align-items: center;">
+
+    <div class="signup-form-1">
+      <div class="tran">
+        <form action="search.html" method="post">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Departure From</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Lucknow">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Arival To</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Gurugram">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Date of travel</label>
+            </div>
+            <div class="col-75">
+              <input type="Date" id="lne" name="le" placeholder="dd/mm/yyyy">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-75">
+            </div>
+            <hr>
+            <a class="btn btn-success" href="search.html">Search Flight/Train/Bus</a>
+          </div>
+      </div>
+    </div>
+
+    </form>
+  </div>
+  </div>
+  </div>
+  <section class="news-ticker">
+    <div class="container">
+        <div class="ticker">
+          <div class="title"><h5>Currency</h5></div>
+            <div class="news">
+             <marquee>
+              <p class="marquee-class">
+                US Dollar (USD) 80.93 || Euro (EUR) 81.41 ||Sterling Pound (GBP) 94.66 || Thai Baht (THB) 2.41 ||Singapore
+                Dollar (SGD) 58.65 ||Canadian Dollar (CAD) 62.09||   US Dollar (USD) 80.93 || Euro (EUR) 81.41 ||Sterling Pound (GBP) 94.66 || Thai Baht (THB) 2.41 ||Singapore
+                Dollar (SGD) 58.65 ||Canadian Dollar (CAD) 62.09 ||  US Dollar (USD) 80.93 || Euro (EUR) 81.41 ||Sterling Pound (GBP) 94.66 || Thai Baht (THB) 2.41 ||Singapore
+                Dollar (SGD) 58.65 ||Canadian Dollar (CAD) 62.09
+             </p>
+             </marquee>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+  <section id="facilites">
+    <h1 style="color: rgb(58, 54, 53); font-size: 3vw;">
+      <center><i>Our Service Includes</i></center>
+    </h1>
+    <div class="container">
+      <div class="card-group">
+        <div class="card">
+          <img class="other" src="5.jpg" height="270px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Hotel</h5>
+            <h5 class="btn btn-danger">starting with ₹20000</h5>
+            <p class="card-text">Nepal || Srilanka || India || USA... </p>
+            <a class="btn btn-success" href="login2.html">Signup/Book now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="other" src="6.jpg" class="card-img-top" height="270px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Restaurant</h5>
+            <h5 class="btn btn-danger">starting with ₹2000</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-success" href="login2.html">Signup/Book now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="other" height="270px" src="8.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Beach</h5>
+            <h5 class="btn btn-danger">starting with ₹10000</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+            <a class="btn btn-success" href="login2.html">Signup/Book now</a>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <img class="other" src="7.jpg" height="270px" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Home stay</h5>
+            <h5 class="btn btn-danger">starting with ₹2000</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+            <a class="btn btn-success" href="login2.html">Signup/Book now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="other" height="270px" src="10.jpg" class="card-img-top" height="270px" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Zoo</h5>
+            <h5 class="btn btn-danger">starting with ₹200</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a class="btn btn-success" href="login2.html">Signup/Book now</a>
+          </div>
+        </div>
+        <div class="card">
+          <img class="other" height="270px" src="9.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mountain Hills</h5>
+            <h5 class="btn btn-danger">starting with ₹15000</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+              content. This card has even longer content than the first to show that equal height action.</p>
+            <a class="btn btn-success" href="login2.html">Signup/Book now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<br>
+  <h1 style="color: rgb(58, 54, 53); font-size: 3vw;">
+    <center><i>Tours By Category</i></center>
+  </h1>
+  <br>
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <div class="accordion mt-4" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Honeymoon
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="41.jpg" height="250px" width="250px">
+                  <img src="42.jpg" height="250px" width="250px">
+                  <img src="43.jpg" height="250px" width="250px">
+                  <img src="44.jpg" height="250px" width="250px">
+                  <a class="btn btn-success" href="login3.html">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Adventure & Wildlife
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="45.jpg" height="250px" width="250px">
+                  <img src="35.jpg" height="250px" width="250px">
+                  <img src="47.jpg" height="250px" width="250px">
+                  <img src="48.jpg" height="250px" width="250px">
+                  <a class="btn btn-success" href="login3.html">Book Now</a>
+                </div>
+              </div>
+            </div>
+           
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                 single & Family tour
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <img src="29.jpg" height="250px" width="250px">
+                  <img src="53.jpg" height="250px" width="300px">
+                  <img src="54.jpg" height="250px" width="250px">
+                  <img src="55.jpg" height="250px" width="250px">
+                  <a class="btn btn-success" href="login3.html">Book Now</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h1 style="color: rgb(58, 54, 53); font-size: 3vw;">
+    <center><i>News/Offers</i></center>
+  </h1>
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <div class="danger">
+          <p><strong>
+              <center>News!</center>
+            </strong>
+            <marquee>⚠Good News Travellers! THIS Country Introduces 5-Year Multiple Entry Tourist Visa Scheme.Good News
+              Travellers! THIS Country Introduces 5-Year Multiple Entry Tourist Visa Scheme</marquee>
+            <br>
+            <a href="https://zeenews.india.com/">
+              <marquee>⚠India to remove fare caps for domestic airlines from today:⚠ How it will impact travellers.India
+                to remove fare caps for domestic airlines from today: How it will impact travellers</marquee>
+            </a>
+            <marquee>⚠Good news for international air travellers! Govt signs agreement with 116 countries.⚠Good news for
+              international air travellers! Govt signs agreement with 116 countries</marquee>
+            <marquee>⚠Good news for Travellers to Uttarakhand! Indian Railways’ Rishikesh- Karnaprayag Rail Project on
+              track</marquee>
+            <marquee>⚠Good News Bengaluru! Now Travel Easy To Airport At Rs 35 Only Via These Train.⚠Good News
+              Bengaluru! Now Travel Easy To Airport At Rs 35 Only Via These Trains</marquee>
+            <marquee>⚠Singapore's mask-off heralds good news for APAC travel.⚠Singapore's mask-off heralds good news for
+              APAC travel.⚠Singapore's mask-off heralds good news for APAC travel.⚠Singapore's mask-off heralds good
+              news for APAC travel</marquee>
+            <marquee>⚠Travel India to Vietnam for just Rs 9! Vietjet announces super-saver air tickets on THESE
+              routes.⚠Travel India to Vietnam for just Rs 9! Vietjet announces super-saver air tickets on THESE routes
+            </marquee>
+          </p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="danger">
+          <p><strong>
+              <center>Offers!</center>
+            </strong> <a href="login.html">
+              <marquee>📢10% off(Indiago) Delhi to Lucknow.📢10% off(Indiago) Delhi to Lucknow .📢10% off(Indiago) Delhi
+                to Lucknow .📢10% off(Indiago) Delhi to Lucknow </marquee>
+            </a>
+            <a href="login.html">
+              <marquee>📢10% off(Indiago) Delhi to Dubai.📢10% off(Indiago) Delhi to Dubai.📢10% off(Indiago) Delhi to
+                Dubai </marquee>
+            </a>
+            <a href="login.html">
+              <marquee>📢Railways) Lucknow to Gurugram.📢25% off(Indian Ra25% off(Indian Railways) Lucknow to
+                Gurugram.📢25% off(Indian ilways) Lucknow to Gurugram.📢25% off(Indian ilways) Lucknow to Gurugram
+              </marquee>
+            </a>
+            <a href="login2.htm">
+              <marquee>📢12% off(Hotel) Dubai hotel.📢12% off(Hotel) Dubai hotel .📢12% off(Hotel) Dubai hotel.
+              </marquee>
+            </a>
+            <a href="login2.htm">
+              <marquee>📢50% off(Beach) Goa.📢50% off(Beach) Goa.📢50% off(Beach) Goa.📢50% off(Beach) Goa.📢50%
+                off(Beach) Goa </marquee>
+            </a>
+            <a href="login2.htm">
+              <marquee>📢30% off(Zoo) Delhi.📢30% off(Zoo) Delhi.📢30% off(Zoo) Delhi.📢30% off(Zoo) Delhi.📢30%
+                off(Zoo) Delhi </marquee>
+            </a>
+            <a href="login2.htm">
+              <marquee>📢30% off(Zoo) Delhi.📢30% off(Restaurant) Delhi.📢30% off(Restaurant) Delhi.📢30%
+                off(Restaurant) Delhi.📢30% off(Restaurant) Delhi </marquee>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <h1 style="color: rgb(58, 54, 53); font-size: 3vw;">
+      <center><i>Some Good Places</i></center>
+    <div id="scroll-progress"></div>
+    <ul id="scroller">
+      <li><img src="27.jpg" height="220px" width="200px" alt="taaj mahal"></li>
+      <li><img src="33.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="37.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="38.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="39.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="28.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="29.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="30.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="31.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="32.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="34.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="35.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="50.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="31.jpg" height="220px" width="200px" alt=""></li>
+      <li><img src="40.jpg" height="220px" width="200px" alt=""></li>
+    </ul>
+  </div>
+
+<br>
+  <h1 style="color: rgb(58, 54, 53); font-size: 3vw;">
+    <center><i>Our Clients</i></center>
+  </h1>
+  <p>
+    <center>Give real service to satisfy customer</center>
+  </p>
+
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-sm-6">
+        <div class="testimonial_slider_2">
+
+          <input type="radio" name="slider_2" id="slide_2_1" checked />
+          <input type="radio" name="slider_2" id="slide_2_2" />
+
+          <div class="boo_inner clearfix">
+            <div class="slide_content">
+              <div class="testimonial_2">
+                <div class="content_2">
+
+                  <p><img src="23.jpg" height="120px" widht="120px"><i>provide with the Offers.</i>
+                  </p>
+                </div>
+                <div class="author_2">
+                  <h3>Amar</h3>
+                  <h4>India</h4>
+                </div>
+              </div>
+            </div>
+            <div class="slide_content">
+              <div class="testimonial_2">
+                <div class="content_2">
+
+                  <p><img src="23.jpg" height="120px" widht="120px"><i>Really happy with the response.</i>
+                  </p>
+                </div>
+                <div class="author_2">
+                  <h3>Amar</h3>
+                  <h4>India</h4>
+                </div>
+              </div>
+            </div>
+            <div class="slide_content">
+              <div class="testimonial_2">
+                <div class="content_2">
+                  <p><img src="24.jpg" height="120px" widht="120px"><i>Overall very happy with service.</i></p>
+                </div>
+                <div class="author_2">
+                  <h3>Aniket</h3>
+                  <h4>Nepal</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-sm-6">
+        <div class="testimonial_slider_2">
+
+
+          <input type="radio" name="slider_2" id="slide_2_3" checked />
+          <input type="radio" name="slider_2" id="slide_2_4" />
+          <div class="boo_inner clearfix">
+
+            <div class="slide_content">
+              <div class="testimonial_2">
+                <div class="content_2">
+                  <p><img src="24.jpg" height="120px" widht="120px"><i>We would recommend Travelonline.</i></p>
+                </div>
+                <div class="author_2">
+                  <h3>Sarvesh</h3>
+                  <h4>Dubai</i></h4>
+                </div>
+              </div>
+            </div>
+            <div class="slide_content">
+              <div class="testimonial_2">
+                <div class="content_2">
+                  <p><img src="24.jpg" height="120px" widht="120px"><i>We would recommend visit here.</i></p>
+                </div>
+                <div class="author_2">
+                  <h3>Sarvesh</h3>
+                  <h4>Dubai</i></h4>
+                </div>
+              </div>
+            </div>
+            <div class="slide_content">
+              <div class="testimonial_2">
+                <div class="content_2">
+                  <p><img src="25.jpg" height="120px" widht="120px"><i>good service.</i></p>
+                </div>
+                <div class="author_2">
+                  <h3>Tyagi</h3>
+                  <h4>USA</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <div id="controls">
+    <label for="slide_2_1"></label>
+    <label for="slide_2_2"></label>
+    <label for="slide_2_3"></label>
+    <label for="slide_2_4"></label>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  <section class="section section-default mt-none mb-none">
+    <div class="container">
+      <h1 style="color: rgb(58, 54, 53); font-size: 3vw;">
+        <center><i>Our Partners</i></center>
+        <br>
+        <div class="row">
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="square-holder">
+              <img alt="" src="https://www.goindigo.in/content/dam/indigov2/6e-website/thmbnail.jpg" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="square-holder">
+              <img alt="" src="https://upload.wikimedia.org/wikipedia/hi/7/7b/Indian_Railways_logo.png"
+                height="120px" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="square-holder">
+              <img alt="" src="https://1000logos.net/wp-content/uploads/2020/09/Air-India-logo.png" />
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="square-holder">
+              <img alt="" src="https://media-cdn.tripadvisor.com/media/photo-s/1e/bb/d5/a1/hotel-partner-logo.jpg" height="120px" />
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </strong>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="main">
+      <div class="col1">
+        <h3 style="color:aliceblue" class="heading">
+          Trip Engineer
+        </h3>
+        <ul>
+          <li>
+            <a style="color: red;" href="index.html">
+              Home
+            </a>
+          </li>
+          <li>
+            <a style="color: red;" href="login.html">
+              Become a customer
+            </a>
+          </li>
+          <li>
+            <a style="color: red;" href="aboutus.html">
+              About us
+            </a>
+          </li>
+          
+          <li>
+            <a style="color: red;" href="contact.html">
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="col3">
+        <h3 style="color:rgb(31, 219, 72)" class="heading">
+          Get in touch
+        </h3>
+        <div class="social">
+          <a href="index.html">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+          <a href="index.html">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+          <a href="index.html">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <p style="color: rgb(153, 28, 28);" class="terms">
+      <a href="login.html">FLIGHT || TRAIN || BUS</a>
+      <a href="login2.html">OTHER SERVICES</a>
+      <a href="login3.html">PACKAGE</a>
+    </p>
+    <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+      <div class="copyright-text">
+        <p style="color:rgb(233, 118, 24)">Copyright &copy; 2022, All Right Reserved <a style="color: bisque;"
+            href="index.html">Trip Engineers</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!-- Footer -->
+</body>
+
+</html>
